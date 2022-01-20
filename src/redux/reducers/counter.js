@@ -1,7 +1,7 @@
 import { actions } from '../actions/counter';
 
 const initialState = {
-    value: 0,
+    value: 100,
     name: "Cesar"
 }
 
@@ -20,7 +20,7 @@ export default function counterReducer(state = initialState, action) {
         case actions.RESET:
           return {
             ...state,
-            value: 0
+            value: initialState.value
           };
         default:
           return state;
